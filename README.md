@@ -1,13 +1,13 @@
-<div align="center">
-  
-  # NetRecon
+<div style="text-align: center;">
 
-  NetRecon is a powerful network reconnaissance tool written in Python, designed to make network scanning and penetration testing easier. This script uses `nmap` to perform comprehensive network scans.
+  <strong>NetRecon</strong>
+  
+  <p>NetRecon is a powerful network reconnaissance tool written in Python, designed to make network scanning and penetration testing easier. This script uses <code>nmap</code> to perform comprehensive network scans.</p>
   
 </div>
 
 
-NetRecon is a powerful network reconnaissance tool written in Python, designed to make network scanning and penetration testing easier. This script uses `nmap` to perform comprehensive network scans.
+<br>
 
 ## Features
 
