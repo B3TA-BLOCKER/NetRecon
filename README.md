@@ -1,66 +1,55 @@
-# netrecon
+# NetRecon
 
-`netrecon` is a simple Python script designed for network reconnaissance. It utilizes `nmap` for network scanning and `dirb` for directory brute-forcing on a specified IP address.
+NetRecon is a powerful network reconnaissance tool written in Python, designed to make network scanning and penetration testing easier. This script uses `nmap` to perform comprehensive network scans.
 
 ## Features
 
-- Scans all ports and performs service detection, OS detection, and more using `nmap`.
-- Brute-forces directories on the target IP using `dirb`.
-
-## Requirements
-
-- Python 3.x
-- `nmap`
-- `dirb`
+- Detects and installs `nmap` if not already installed.
+- Performs aggressive scans on all 65,535 TCP ports.
+- Compatible with multiple operating systems: Linux, macOS, and Windows.
 
 ## Installation
 
-1. Ensure that you have Python 3.x installed on your system.
-2. Install `nmap` and `dirb` using your package manager.
+Before running the script, ensure you have Python installed on your system. The script will handle the installation of `nmap` for Linux distributions and macOS. Windows users need to install `nmap` manually.
 
-For Debian-based distributions (Ubuntu, Kali, etc.):
-```bash
-sudo apt-get install nmap dirb
-```
+For Linux distributions, the script uses the `distro` package to detect the Linux version. Install it using:
 
-For Red Hat-based distributions (Fedora, CentOS, etc.):
 ```bash
-sudo yum install nmap dirb
+pip install distro
 ```
 
 ## Usage
 
-1. Clone the repository:
+Clone the repository and run the script:
+
 ```bash
-git clone https://github.com/YOUR_USERNAME/netrecon.git
+git clone https://github.com/B3TA-BLOCKER/NetRecon.git
+cd NetRecon
+python3 main.py
 ```
 
-2. Navigate to the repository directory:
-```bash
-cd netrecon
-```
+The script will prompt you to enter an IP address for scanning:
 
-3. Run the script:
-```bash
-python3 netrecon.py
+```plaintext
+Enter the IP address: <your-ip-address>
 ```
-
-4. Enter the IP address when prompted.
 
 ## Example
 
-```bash
-$ python3 netrecon.py
-Enter the IP: 192.168.1.1
+Here is an example of how the script works:
+
+```plaintext
+Enter the IP address: 192.168.1.1
+Installing Nmap ......
+nmap installation successful
+Starting Nmap 7.80 ( https://nmap.org ) at 2024-07-30 12:00 UTC
+Nmap scan report for 192.168.1.1
+Host is up (0.00052s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE
+80/tcp open  http
 ```
 
-## Disclaimer
+## Author
 
-This script is intended for educational purposes only. Use it at your own risk and ensure that you have proper authorization before scanning any network or IP address.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-```
-
-Replace `YOUR_USERNAME` with your actual GitHub username in the `git clone` command.
+- [Hassaan Ali Bukhari](https://github.com/B3TA-BLOCKER)
