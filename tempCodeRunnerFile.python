@@ -1,0 +1,7 @@
+from time import sleep
+
+
+print("Installing Nmap ", end='')
+for i in range(10):
+    sleep(0.5)
+    print(".",end='', flush=True)
