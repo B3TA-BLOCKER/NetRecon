@@ -43,5 +43,5 @@ result = subprocess.run(['nmap', '--version'])
 if result.returncode == 0:
     recon(ip=ip_address)
 else:
-    install_nmap()
-    recon(ip=ip_address)
+    if install_nmap():
+        recon(ip=ip_address)
