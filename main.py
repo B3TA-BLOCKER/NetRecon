@@ -31,11 +31,9 @@ def install_nmap() -> bool:
         return False
 
 
-
 def recon(ip)-> None:
     os.system(f"nmap -A -p- -Pn {ip} -v")
     os.system(f"dirb {ip}")
-
 
 
 ip_address = input("Enter the ip: ")
