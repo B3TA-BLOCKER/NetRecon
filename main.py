@@ -4,6 +4,9 @@ import subprocess
 import platform
 
 
+# Author: b3ta-blocker
+
+
 try:
     import distro
 except ImportError:
